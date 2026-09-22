@@ -4,7 +4,9 @@ import './App.css';
 import Header from './Header'; //Here we import component that we create in the header.js file
 import Content from './Content'; //here we import component that we create in the Conent.js file
 import Footer from './Footer';//here we import component that we create in the Footer.js file
-
+import './Component/index.css'
+import HeaderTravel from './Component/Header';
+import ContentTravel from './Component/Content';
 function App() { /* /here App is a react component <App />can be thought of as using that component. function App() {, a javascript function called App(that's the name of the function), means we're defining an App component. The function returns something.(remember the function here is a react component) so we say the react compenent return something similar exactly like HTML code which is called JSX is a syntax extension for JavaScript that allows us to write HTML-like markup inside JavaScript. */
   
   /* const multiNames = () => {
@@ -42,8 +44,12 @@ function App() { /* /here App is a react component <App />can be thought of as u
           <li>{multiNames()}</li>
         </ul> */}
       </div>
-      <div>
-        <h1>project 2: Travel Journal Project </h1>
+      <h1>project 2: Travel Journal Project </h1>
+      <div className='travel-journal'>
+        <HeaderTravel />
+        <ContentTravel />
+        <ContentTravel />
+        <ContentTravel />
       </div>
     </div>
   );
