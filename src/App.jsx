@@ -7,6 +7,11 @@ import Footer from './Footer';//here we import component that we create in the F
 import './Component/index.css'
 import HeaderTravel from './Component/Header';
 import ContentTravel from './Component/Content';
+import TravelData from './Component/data'
+/* import MountFuji from './Component/Images/Mount_Fuji_from.jpg';
+import SydneyOperaHouse from './Component/Images/SydneyOperaHouse.jpeg';
+import Geirangerfjord from './Component/Images/Geirangerfjord.jpeg'; */
+
 function App() { /* /here App is a react component <App />can be thought of as using that component. function App() {, a javascript function called App(that's the name of the function), means we're defining an App component. The function returns something.(remember the function here is a react component) so we say the react compenent return something similar exactly like HTML code which is called JSX is a syntax extension for JavaScript that allows us to write HTML-like markup inside JavaScript. */
   
   /* const multiNames = () => {
@@ -14,7 +19,14 @@ function App() { /* /here App is a react component <App />can be thought of as u
     const handler = Math.floor(Math.random() * 4)
     return stacks[handler]
   } */
-
+  const travelElement = TravelData.map((data) => {
+    return (
+      <ContentTravel 
+        key={data.id}
+        {...data}
+      />
+    )
+  })
   return (
     <div className="App">{/* Note in JSX you can not weite element next to each other, instead you wrap it in a parent element and inside the parent element you can have as many children inside the parent element  */}
     <h1>Project 1: React Fact Project</h1>
@@ -47,9 +59,7 @@ function App() { /* /here App is a react component <App />can be thought of as u
       <h1>project 2: Travel Journal Project </h1>
       <div className='travel-journal'>
         <HeaderTravel />
-        <ContentTravel />
-        <ContentTravel />
-        <ContentTravel />
+        {travelElement}
       </div>
     </div>
   );
