@@ -4,18 +4,20 @@ import Geirangerfjord from './Images/Geirangerfjord.jpeg';
 
 const travelData = [
     {
+        // id: 1,
         img:{
             src: MountFuji,
             alt:"Mount Fuji"
         },
                 
-        country: "Japan",
+        country: "Japn",
         title:"Mount Fuji",
         googleMap:"https://maps.app.goo.gl/6RLYZDuuuqJ7kNGZ9",
         text:"Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists."
     },
 
     {
+        // id: 2,
         img:{
             src: SydneyOperaHouse,
             alt:"Sydney Opera House"
@@ -28,12 +30,25 @@ const travelData = [
     },
 
     {
+        // id: 3,
         img:{
             src: Geirangerfjord,
             alt:"Geiranger Fjord"
         },
                 
-        country: "Norway",
+        country: "Norwyy",
+        title:"Geiranger Fjord",
+        googleMap:"https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
+        text:"The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality."
+    },
+    {
+        // id: 3,
+        img:{
+            src: Geirangerfjord,
+            alt:"Geiranger Fjord"
+        },
+                
+        country: "Brazil",
         title:"Geiranger Fjord",
         googleMap:"https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
         text:"The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality."
