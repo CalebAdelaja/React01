@@ -4,7 +4,7 @@ import Geirangerfjord from './Images/Geirangerfjord.jpeg';
 
 const travelData = [
     {
-        // id: 1,
+        id: 1,
         img:{
             src: MountFuji,
             alt:"Mount Fuji"
@@ -17,7 +17,7 @@ const travelData = [
     },
 
     {
-        // id: 2,
+        id: 2,
         img:{
             src: SydneyOperaHouse,
             alt:"Sydney Opera House"
@@ -30,7 +30,7 @@ const travelData = [
     },
 
     {
-        // id: 3,
+        id: 3,
         img:{
             src: Geirangerfjord,
             alt:"Geiranger Fjord"
@@ -41,18 +41,6 @@ const travelData = [
         googleMap:"https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
         text:"The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality."
     },
-    {
-        // id: 3,
-        img:{
-            src: Geirangerfjord,
-            alt:"Geiranger Fjord"
-        },
-                
-        country: "Brazil",
-        title:"Geiranger Fjord",
-        googleMap:"https://maps.app.goo.gl/fhkJuBhmFDv47tiB7",
-        text:"The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality."
-    }
 ]
 
 export default travelData

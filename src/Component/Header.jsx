@@ -1,5 +1,5 @@
 import Globle from './Images/global.png'
-import './index.css'
+// import './index.css'
 const Header = () => {
   return (
     <header className="travel-nav">
