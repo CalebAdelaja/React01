@@ -22,7 +22,7 @@ function App() { /* /here App is a react component <App />can be thought of as u
   const travelElement = TravelData.map((data) => {
     return (
       <ContentTravel 
-      key={data.id}
+        key={data.id}
         {...data}
       />
     )
