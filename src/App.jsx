@@ -8,6 +8,8 @@ import './Component/index.css'
 import HeaderTravel from './Component/Header';
 import ContentTravel from './Component/Content';
 import TravelData from './Component/data'
+import jokes from './Component/Jokes/jokeData';
+import Main from './Component/Jokes/Main';
 /* import MountFuji from './Component/Images/Mount_Fuji_from.jpg';
 import SydneyOperaHouse from './Component/Images/SydneyOperaHouse.jpeg';
 import Geirangerfjord from './Component/Images/Geirangerfjord.jpeg'; */
@@ -20,16 +22,32 @@ function App() { /* /here App is a react component <App />can be thought of as u
     return stacks[handler]
   } */
   const travelElement = TravelData.map((data) => {
+    console.log(data)
     return (
       <ContentTravel 
         key={data.id}
+        // country={data.country}
+        // img={data.img}
+        // title={data.title}
+        // googleMap={data.googleMap}
+        // text={data.text}
         {...data}
       />
     )
   })
+  const mapJokes = jokes.map((joke) => {
+    return (  
+      <Main
+        key={joke.id}
+        // setup={joke.setup}
+        // punchline={joke.punchline} 
+        {...joke}
+      />
+    )
+  })
   return (
-    <div className="App">{/* Note in JSX you can not weite element next to each other, instead you wrap it in a parent element and inside the parent element you can have as many children inside the parent element  */}
-    <h1>Project 1: React Fact Project</h1>
+    <div className="App">{/* Note in JSX you can not write element next to each other,      instead you wrap it in a parent element and inside the parent element you can have as many children inside the parent element  */}
+      <h1>Project 1: React Fact Project</h1>
       <div className="App-header">
         <Header />
         <Content />
@@ -61,6 +79,16 @@ function App() { /* /here App is a react component <App />can be thought of as u
         <HeaderTravel />
         {travelElement}
       </div>
+
+      <section className='jokes-section'>
+        <div className='jokes-heading'>
+          <span className='jokes-eyebrow'>A little Naija humor</span>
+          <h1>Jokes, setup to punchline</h1>
+        </div>
+        <div className='jokes-list'>
+        {mapJokes}
+        </div>
+      </section>
     </div>
   );
 }

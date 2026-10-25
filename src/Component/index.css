@@ -93,3 +93,146 @@ article.journal-entry .main-image {
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
+
+.jokes-section {
+    --jokes-ink: #183b35;
+    --jokes-muted: #60756f;
+    --jokes-paper: #f1f5eb;
+    --jokes-accent: #d9f06b;
+    width: min(100% - 32px, 760px);
+    margin: 24px auto 48px;
+    padding: 30px;
+    color: var(--jokes-ink);
+    background-color: var(--jokes-paper);
+    border: 1px solid #dce5d6;
+    border-radius: 8px;
+}
+
+.jokes-heading {
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #d5dfd0;
+}
+
+.jokes-eyebrow {
+    color: #39715f;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.jokes-heading h1 {
+    margin: 6px 0 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    line-height: 1.1;
+}
+
+.jokes-list {
+    display: grid;
+    gap: 12px;
+}
+
+.joke-card {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid #e1e8dc;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgb(24 59 53 / 5%);
+    animation: joke-arrive 420ms both;
+}
+
+.joke-card::before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 5px;
+    background: var(--jokes-accent);
+    content: '';
+}
+
+.joke-setup h2 {
+    margin: 5px 0 17px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+.joke-label {
+    color: var(--jokes-muted);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.joke-punchline {
+    padding: 12px 14px;
+    background: #f3f7e8;
+    border-radius: 4px;
+}
+
+.joke-punchline p {
+    margin: 5px 0 0;
+    font-size: 0.97rem;
+    line-height: 1.55;
+}
+
+.joke-card > button {
+    margin-top: 14px;
+    padding: 10px 16px;
+    color: #183b35;
+    background: #d9f06b;
+    border: 0;
+    border-radius: 999px;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.joke-card > button:hover {
+    background: #c9e653;
+    transform: translateY(-1px);
+}
+
+.joke-card > button:focus-visible {
+    outline: 3px solid #39715f;
+    outline-offset: 3px;
+}
+
+.joke-card > button:active {
+    transform: translateY(0);
+}
+
+@keyframes joke-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 520px) {
+    .jokes-section {
+        width: calc(100% - 24px);
+        margin-top: 16px;
+        padding: 20px 14px;
+    }
+
+    .joke-card {
+        padding: 17px 16px 17px 19px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .joke-card {
+        animation: none;
+    }
+}
