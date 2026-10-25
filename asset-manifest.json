@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React01/static/css/main.f9b46011.css",
+    "main.js": "/React01/static/js/main.a89665e9.js",
+    "static/js/453.6c5908b9.chunk.js": "/React01/static/js/453.6c5908b9.chunk.js",
+    "static/media/Mount_Fuji_from.jpg": "/React01/static/media/Mount_Fuji_from.ccbbb11a10a9c238df94.jpg",
+    "static/media/Geirangerfjord.jpeg": "/React01/static/media/Geirangerfjord.50e6803b5c3bf79affef.jpeg",
+    "static/media/SydneyOperaHouse.jpeg": "/React01/static/media/SydneyOperaHouse.78ce7a1ab32e3c535728.jpeg",
+    "static/media/global.png": "/React01/static/media/global.8abfe318fa1f95dfd25a.png",
+    "static/media/logo.svg": "/React01/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/React01/index.html",
+    "main.f9b46011.css.map": "/React01/static/css/main.f9b46011.css.map",
+    "main.a89665e9.js.map": "/React01/static/js/main.a89665e9.js.map",
+    "453.6c5908b9.chunk.js.map": "/React01/static/js/453.6c5908b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9b46011.css",
+    "static/js/main.a89665e9.js"
+  ]
+}
